@@ -15,7 +15,7 @@ pipeline{
             }
             stage('Deployment'){
                 steps{
-                  sshPublisher(publishers: [sshPublisherDesc(configName: 'andhikahs.tech', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: 'rm -r ./*', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '/staging/', remoteDirectorySDF: false, removePrefix: '', sourceFiles: 'build/**/'), sshTransfer(cleanRemote: false, excludes: '', execCommand: '', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '/staging/', remoteDirectorySDF: false, removePrefix: '', sourceFiles: 'build/**/')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])  
+                    
                 }
             }
         }
