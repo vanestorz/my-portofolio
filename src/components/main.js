@@ -6,7 +6,7 @@ import About from './aboutme';
 import Contact from './contact';
 import Projects from './projects';
 import Resume from './resume';
-
+import notFound from './notFound';
 const Main = () => (
     <Switch>
         <Route exact path="/" component={LandingPage} />
@@ -14,6 +14,7 @@ const Main = () => (
         <Route path ="/contact" component={Contact} />
         <Route path ="/projects" component={Projects} />
         <Route path = "/resume" component={Resume} />
+        <Route component={notFound} />
     </Switch>
 )
 

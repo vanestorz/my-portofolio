@@ -44,7 +44,6 @@ class Projects extends Component {
                     <IconButton name="share " />
                 </CardMenu>
                 </Card>
-
                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                     <CardTitle style={{color: '#fff', height: '176px', background: 
                     'url(https://cdn.worldvectorlogo.com/logos/react-1.svg) center / cover'}}>React Project #1</CardTitle>
@@ -59,22 +58,6 @@ class Projects extends Component {
                     <IconButton name="share " />
                 </CardMenu>
                 </Card>
-
-                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background: 
-                    'url(https://cdn.worldvectorlogo.com/logos/react-1.svg) center / cover'}}>React Project #1</CardTitle>
-                <CardText>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                </CardText>
-                <CardActions border>
-                    <Button colored>GitHub</Button>
-                    <Button colored>LiveDemo</Button>
-                </CardActions>
-                <CardMenu style={{color: '#fff'}}>
-                    <IconButton name="share " />
-                </CardMenu>
-                </Card>
-
                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                     <CardTitle style={{color: '#fff', height: '176px', background: 
                     'url(https://cdn.worldvectorlogo.com/logos/react-1.svg) center / cover'}}>React Project #1</CardTitle>
@@ -121,9 +104,8 @@ class Projects extends Component {
                     <Tab>System Engineer</Tab>
                     <Tab>Security</Tab>
                 </Tabs>
-
-                    <Grid>
-                        <Cell col={12}>
+                    <Grid className="projects-page">
+                        <Cell col={12} phone={6}>
                             <div className="content">{this.toggleCategories()}</div>
                         </Cell>
                     </Grid>
