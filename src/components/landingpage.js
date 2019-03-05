@@ -22,12 +22,20 @@ class Landing extends Component {
 
                         <div className="social-links">
                         {/* LinkedIn */}
-                            <a href="http://andhikahs.tech" rel="noopener noreferrer"  target="_blank">
+                            <a href="https://andhikahs.tech" rel="noopener noreferrer"  target="_blank">
                                 <i className="fa fa-linkedin-square" aria-hidden="true" />
                             </a>
                         {/* Github */}
-                            <a href="http://andhikahs.tech" rel="noopener noreferrer" target="_blank">
+                            <a href="https://andhikahs.tech" rel="noopener noreferrer" target="_blank">
                                 <i className="fa fa-github-square" aria-hidden="true" />
+                            </a>
+                        {/* Facebook */}
+                            <a href="https://andhikahs.tech" rel="noopener noreferrer" target="_blank">
+                                <i className="fa fa-facebook-square" aria-hidden="true" />
+                            </a>    
+                        {/* Instagram */}
+                            <a href="https://andhikahs.tech" rel="noopener noreferrer" target="_blank">
+                                <i className="fa fa-instagram" aria-hidden="true" />
                             </a>
                         </div>
                         </div>
