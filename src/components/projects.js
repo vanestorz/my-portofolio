@@ -11,6 +11,8 @@ class Projects extends Component {
         if(this.state.activeTab === 0){
             return(
             <div className="projects-grid">
+                <Grid>
+                <Cell col={12} tablet={12} phone={12}>
                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                     <CardTitle style={{color: '#fff', height: '176px', background: 
                     'url(https://cdn.worldvectorlogo.com/logos/react-1.svg) center / cover'}}>React Project #1</CardTitle>
@@ -25,11 +27,15 @@ class Projects extends Component {
                     <IconButton name="share " />
                 </CardMenu>
                 </Card>
+                </Cell>
+                </Grid>
             </div>
             )
         } else if(this.state.activeTab === 1){
             return(
             <div className="projects-grid">
+            <Grid>
+                <Cell col={4} tablet={12} phone={12}>
                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                     <CardTitle style={{color: '#fff', height: '176px', background: 
                     'url(https://cdn.worldvectorlogo.com/logos/react-1.svg) center / cover'}}>React Project #1</CardTitle>
@@ -44,6 +50,9 @@ class Projects extends Component {
                     <IconButton name="share " />
                 </CardMenu>
                 </Card>
+                </Cell>
+
+                <Cell col={4} tablet={12} phone={12}>
                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                     <CardTitle style={{color: '#fff', height: '176px', background: 
                     'url(https://cdn.worldvectorlogo.com/logos/react-1.svg) center / cover'}}>React Project #1</CardTitle>
@@ -58,6 +67,9 @@ class Projects extends Component {
                     <IconButton name="share " />
                 </CardMenu>
                 </Card>
+                </Cell>
+
+                <Cell col={4} tablet={12} phone={12}>
                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                     <CardTitle style={{color: '#fff', height: '176px', background: 
                     'url(https://cdn.worldvectorlogo.com/logos/react-1.svg) center / cover'}}>React Project #1</CardTitle>
@@ -72,11 +84,15 @@ class Projects extends Component {
                     <IconButton name="share " />
                 </CardMenu>
                 </Card>
-            </div>  
+                </Cell>
+            </Grid>
+                </div>
             )
         } else if(this.state.activeTab === 2){
             return(
                 <div className="projects-grid">
+                    <Grid>
+                    <Cell col={12} tablet={12} phone={12}>
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                         <CardTitle style={{color: '#fff', height: '176px', background: 
                         'url(https://cdn.worldvectorlogo.com/logos/react-1.svg) center / cover'}}>React Project #1</CardTitle>
@@ -91,8 +107,10 @@ class Projects extends Component {
                         <IconButton name="share " />
                     </CardMenu>
                     </Card>
+                    </Cell>
+                    </Grid>
                 </div>
-            )
+                )
         }
     }
 
@@ -104,11 +122,9 @@ class Projects extends Component {
                     <Tab>System Engineer</Tab>
                     <Tab>Security</Tab>
                 </Tabs>
-                    <Grid className="projects-page">
-                        <Cell col={12} phone={6}>
-                            <div className="content">{this.toggleCategories()}</div>
-                        </Cell>
-                    </Grid>
+            <div className="projects-page"> 
+                    <div className="content">{this.toggleCategories()}</div>
+            </div>
             </div>
         )
     }

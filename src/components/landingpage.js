@@ -6,7 +6,7 @@ class Landing extends Component {
         return (
             <div style={{width: '100%', margin: 'auto'}}>
                 <Grid className="landing-grid">
-                    <Cell col={12}>
+                    <Cell col={12} tablet={12} phone={12}>
                         <img 
                             src="https://i.imgur.com/Dn2RIGX.png"
                             alt="avatar"
