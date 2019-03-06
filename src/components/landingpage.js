@@ -4,22 +4,20 @@ import { Grid, Cell } from 'react-mdl';
 class Landing extends Component {
     render() {
         return (
-            <div style={{width: '100%', margin: 'auto'}}>
-                <Grid className="landing-grid">
+            <div className="landing-grid">
+                <Grid>
                     <Cell col={12} tablet={12} phone={12}>
                         <img 
                             src="https://i.imgur.com/Dn2RIGX.png"
                             alt="avatar"
                             className="avatar-img-landing"
                         />
-
-                        <div className="banner-text">
+                    </Cell>
+                    <Cell col={12} tablet={12} phone={12}>
+                    <div className="banner-text">
                             <h1>System Engineer</h1>
-
                         <hr/>
-
                         <p>Continous Integration | Continuous Deployment | Docker | Jenkins | Vulnerability Assessment | Penetration Testing</p>
-
                         <div className="social-links">
                         {/* LinkedIn */}
                             <a href="https://andhikahs.tech" rel="noopener noreferrer"  target="_blank">

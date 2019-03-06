@@ -9,17 +9,15 @@
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
 }
 
 .avatar-img-landing {
   height: 250px;
-  margin-top: 10em;
-  padding-top: 0em;
+  margin-top: 7em;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 50%;
 }
@@ -70,12 +68,11 @@
 }
 
 .projects-grid {
-}
-
-.projects-page {
-  background: #0F2027;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 150px;
 }
 
 .contact-body {
@@ -119,4 +116,20 @@
   font-size: 66px;
   padding-right: 5rem;
   color: white;
+}
+
+.abso {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
 }

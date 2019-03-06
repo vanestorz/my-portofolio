@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton, Footer, FooterSection, FooterLinkList } from 'react-mdl';
+import { relative } from 'path';
 
 class Projects extends Component {
     constructor(props){
@@ -116,16 +117,24 @@ class Projects extends Component {
 
     render() {
         return(
-            <div className="category-tabs">
+        <div className="abso">
+            <div className="category-tabs" style={{fontFamily: "Oxygen", backgroundColor: "white"}}>
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
                     <Tab>React</Tab>
                     <Tab>System Engineer</Tab>
                     <Tab>Security</Tab>
                 </Tabs>
-            <div className="projects-page"> 
                     <div className="content">{this.toggleCategories()}</div>
-            </div>
-            </div>
+            </div>  
+        <Footer size="mini" className="footer">
+        <FooterSection type="left" logo="andhikahs.tech">
+            <FooterLinkList>
+                <a href="#">Help</a>
+                <a href="#">Privacy & Terms</a>
+            </FooterLinkList>
+        </FooterSection>
+        </Footer>
+        </div>     
         )
     }
 }
